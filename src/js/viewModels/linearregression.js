@@ -20,7 +20,7 @@ define(['ojs/ojcore', 'knockout', 'viewModels/common/linearRegressionHelper', 'o
       self.xySeriesValue = ko.observableArray();
       self.xyGroupsValue = ko.observableArray();
 
-      self.buttonClick = function(event) {
+      self.callTrainModel = function(event) {
         var dataPayload = JSON.stringify({
             "steps": parseInt(self.steps()),
             "learnrate": parseFloat(self.learnrate())
